@@ -1,0 +1,40 @@
+.txt-input{
+  padding: 10px 15px;          /* espacio interno */
+  border: 2px solid #ccc;      /* borde gris claro */
+  border-radius: 8px;          /* bordes redondeados */
+  font-size: 16px;             /* tamaño de texto */
+  outline: none;               /* quita borde azul por defecto al enfocar */
+}
+
+label {
+  display: block;            /* hace que cada label esté en su línea */
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+#btn_ingresar {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4CAF50; /* verde */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+.layout {
+  display: flex;        /* activa flexbox */
+  min-height: 100%;    /* ocupa toda la altura de la ventana */
+}
+
+aside {
+  width: 250px;   
+  height: 100vh;      /* ancho fijo del aside */
+  background-color: #ddd;
+  padding: 20px;
+}
+
+main {
+  flex: 1;              /* ocupa todo el espacio restante */
+  padding: 20px;
+}
