@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Login</title>
+  <link rel="stylesheet" href="src/css/login.css">
+</head>
+<body>
+  <aside>
+    <img src="./src/img/logo.png" class="logo-aside" alt="">
+    <h1 class="titulo">crea tu cuenta</h1>
+    <form>
+      <label for="txt_nusuario">Username:</label>
+      <input type="text" class="txt-input" id="txt_nusuario_crear" name="username" placeholder="Escribe tu usuario">
+
+      <br><br>
+
+      <label for="txt_contraseña">Password:</label>
+      <input type="password" class="txt-input" id="txt_contraseña_crear" name="password" placeholder="Escribe tu contraseña">
+
+      <br><br>
+       <label for="txt_confirmacion">confirm password:</label>
+      <input type="password" class="txt-input" id="txt_confirmacion_crear"  placeholder="confirma contraseña"> 
+      <br><br>
+      <label id="mensaje_crear" for="btn_crear"></label>
+      <button type="button" id="btn_crear">crear</button>
+      <br>
+      <a href="login.html">inicia sesion aqui</a>
+    </form>
+  </aside>
+  <div class="fondo-login">
+         <img src="src/img/fondo_login.jpeg" id="fondo-id" alt="">
+  </div>
+         <script src="src/js/usuarios.js"></script>
+         <script src="src/js/registrar.js" id="fondo_id"></script>
+
+</body>
+</html>
