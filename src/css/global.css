@@ -4,10 +4,12 @@ nav {
     align-items: center;
     justify-content: space-between;
     border-radius: 8px;
+    max-height: 150px;
 }
 
 .logo {
-    width: 250px;
+    width: 300px;
+    height: 200px;
 }
 
 .navbar {
@@ -16,6 +18,9 @@ nav {
     gap: 10rem;
     justify-content: center;
     
+}
+.datos-usuario{
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .navbar a {

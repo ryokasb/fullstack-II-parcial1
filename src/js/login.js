@@ -8,7 +8,6 @@ const ingresar = document.getElementById("btn_ingresar");
 const result= document.getElementById("mensaje");
 
 ingresar.addEventListener("click", function(e){
-    e.preventDefault();
 
     const username = document.getElementById("txt_nusuario").value;
     const password = document.getElementById("txt_contraseña").value;
@@ -18,8 +17,9 @@ ingresar.addEventListener("click", function(e){
     if(usuarioEncontrado){
         result.innerText = "Login exitoso";
          setTimeout(() => {
-        window.location.replace("index.html");
-       }, 1500);
+            sessionStorage.setItem("usuarioActivo", usuarioEncontrado.username);
+            window.location.replace("index.html"); 
+       }, 1000);
     } else {
         result.innerText = "Usuario o contraseña incorrectos";
          document.getElementById("txt_nusuario").value = "";

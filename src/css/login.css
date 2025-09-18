@@ -5,6 +5,19 @@
   font-size: 16px;             /* tamaño de texto */
   outline: none;               /* quita borde azul por defecto al enfocar */
 }
+.titulo{
+  font-family: Arial, sans-serif;
+  color: #333;
+  font-weight: bold;
+}
+.logo-aside {
+  max-height: 200px;
+  aspect-ratio: 16 / 15;
+  object-fit: contain; /* mantiene la imagen completa sin deformar */
+  width: auto; /* ajusta automáticamente */
+  display: block; /* evita espacios raros debajo */
+  margin: 0 auto; /* si quieres centrarlo */
+}
 
 label {
   display: block;            /* hace que cada label esté en su línea */
@@ -22,19 +35,17 @@ label {
   font-size: 16px;
   cursor: pointer;
 }
-.layout {
-  display: flex;        /* activa flexbox */
-  min-height: 100%;    /* ocupa toda la altura de la ventana */
-}
-
 aside {
-  width: 250px;   
-  height: 100vh;      /* ancho fijo del aside */
+  width: 250px;       
   background-color: #ddd;
   padding: 20px;
 }
 
-main {
-  flex: 1;              /* ocupa todo el espacio restante */
-  padding: 20px;
+body{
+  display: flex;
+  max-height: 100%;
+}
+#fondo-id {
+  width: 100%;
+  height: 100%;
 }

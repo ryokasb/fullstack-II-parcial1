@@ -2,13 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Login</title>
   <link rel="stylesheet" href="src/css/login.css">
 </head>
 <body>
   <aside>
-    <h1>login</h1>
+    <img src="./src/img/logo.png" class="logo-aside" alt="">
+    <h1 class="titulo">login</h1>
     <form>
       <label for="txt_nusuario">Username:</label>
       <input type="text" class="txt-input" id="txt_nusuario" name="username" placeholder="Escribe tu usuario">
@@ -20,9 +21,12 @@
 
       <br><br>
       <label id="mensaje" for="btn_ingresar"></label>
-      <button type="submit" id="btn_ingresar">Ingresar</button>
+      <button type="button" id="btn_ingresar">Ingresar</button>
     </form>
   </aside>
-  <script src="src/js/login.js"></script>
+  <div class="fondo-login">
+         <img src="src/img/fondo_login.jpeg" id="fondo-id" alt="">
+  </div>
+         <script src="src/js/login.js" id="fondo_id"></script>
 </body>
 </html>
