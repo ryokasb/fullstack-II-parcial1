@@ -5,5 +5,5 @@ if(!usuarioActivo){
     window.location.replace("login.html");
 } else {
     // mostrar contenido de usuario
-    document.getElementById("user").innerText = `Bienvenido, ${usuarioActivo}`;
+    document.getElementById("user").innerText = ` ${usuarioActivo}`;
 }

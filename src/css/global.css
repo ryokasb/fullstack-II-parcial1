@@ -3,7 +3,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 8px;
     max-height: 150px;
 }
 
@@ -30,7 +29,13 @@ nav {
     border-radius: 6px;
     
 }
-
+.datos-usuario{
+    display: flex;
+    margin-right: 200px;
+}
+.datos-usuario img{
+    max-width: 50px;
+}
 .navbar a:hover {
     background-color: grey;
     color: white;
