@@ -1,0 +1,122 @@
+
+.buscador-container {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+.seccion-libros{
+  background: linear-gradient(120deg, #f5f7fa, #e4efff);
+}
+.buscador-container input {
+    width: 60%;
+    padding: 12px 15px;
+    border-radius: 10px 0 0 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+}
+
+.buscador-container button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buscador-container button:hover {
+    background-color: #0056b3;
+}
+
+/* --- Libros más vendidos --- */
+.seccion-libros {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.seccion-libros h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #222;
+}
+
+.libros-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.libro-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    width: 180px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.libro-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.libro-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.libro-card h3, .libro-card h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.libro-card p {
+    font-size: 14px;
+    color: #666;
+}
+
+/* --- Categorías --- */
+.seccion-categorias {
+    padding: 40px 20px;
+}
+
+.seccion-categorias h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #222;
+}
+
+.categorias-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.categoria-card {
+    background-color: #f8f8f8;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+}
+
+.categoria-card h3 {
+    margin-bottom: 15px;
+    color: #007BFF;
+    text-align: center;
+}
+
+.libros-categoria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}

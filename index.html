@@ -5,22 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="src/css/global.css">
+    <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body>
-    <header>
-        <nav class="border-8px" >
-            <img src="src/img/Logo.png" class="logo" alt="">
-                <ul class="navbar">
-                     <li><a class="bg-blue border-8px" href="index.html">Inicio</a></li>
-                     <li><a class="" href="productos.html">Productos</a></li>
-                    <li><a class="" href="contacto.html">Contacto</a></li>
-                </ul>
-                <div class="datos-usuario">
-                   <img src="src/img/avatar.png" alt="">
-                   <p id="user"></p>
-                </div>
+ <header>
+        <nav class="border-8px">
+            <img src="src/img/Logo.png" class="logo" alt="Logo Librería">
+            <ul class="navbar">
+                <li><a class="bg-blue border-8px" href="index.html">Inicio</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="datos-usuario">
+                <img src="src/img/avatar.png" alt="Usuario">
+                <p id="user"></p>
+            </div>
         </nav>
-</header>
+    </header>
+
+
+    <section class="hero">
+        <div class="hero-container">
+            <h1>Bienvenido a Nuestra Librería</h1>
+            <p>Descubre los libros más vendidos y encuentra tu próximo favorito.</p>
+            <a href="#mas-vendidos" class="btn-hero">Explorar libros</a>
+        </div>
+    </section>
+
+    <section class="buscador-container">
+        <input type="text" id="buscador" placeholder="Busca un libro...">
+        <button id="btn-buscar">Buscar</button>
+    </section>
+
+   
+    <section class="seccion-libros">
+        <h2>Libros más vendidos</h2>
+        <div class="libros-container" id="mas-vendidos">
+            <div class="libro-card">
+                <img src="src/img/libros/el_principito.jpg" alt="El Principito">
+                <h3>El Principito</h3>
+                <p>Antoine de Saint-Exupéry</p>
+            </div>
+            <div class="libro-card">
+                <img src="src/img/libros/cien_anos.jpg" alt="Cien Años de Soledad">
+                <h3>Cien Años de Soledad</h3>
+                <p>Gabriel García Márquez</p>
+            </div>
+            <div class="libro-card">
+                <img src="src/img/libros/harry_potter.jpg" alt="Harry Potter">
+                <h3>Harry Potter</h3>
+                <p>J.K. Rowling</p>
+            </div>
+        </div>
+    </section>
+
+   
+    <section class="seccion-categorias">
+        <h2>Libros por categoría</h2>
+        <div class="categorias-container">
+            <div class="categoria-card">
+                <h3>Ficción</h3>
+                <div class="libros-categoria">
+                    <div class="libro-card">
+                        <img src="src/img/libros/el_principito.jpg" alt="El Principito">
+                        <h4>El Principito</h4>
+                    </div>
+                    <div class="libro-card">
+                        <img src="src/img/libros/cien_anos.jpg" alt="Cien Años de Soledad">
+                        <h4>Cien Años de Soledad</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="categoria-card">
+                <h3>Infantil</h3>
+                <div class="libros-categoria">
+                    <div class="libro-card">
+                        <img src="src/img/libros/harry_potter.jpg" alt="Harry Potter">
+                        <h4>Harry Potter</h4>
+                    </div>
+                    <div class="libro-card">
+                        <img src="src/img/libros/alicia.jpg" alt="alicia en el pais de la maravillas">
+                        <h4>alicia en el pais de las maravillas</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Librería Web. Todos los derechos reservados.</p>
+    </footer>
 <script src="src/js/index.js"></script>
 </body>
 </html>

@@ -1,0 +1,106 @@
+
+input{
+    justify-content: center;
+    margin-bottom: 10px;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+button {
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+input:focus, textarea:focus {
+  outline: 2px solid #007bff;
+}
+.contacto {
+    padding: 80px 20px;
+    background: linear-gradient(120deg, #f5f7fa, #e4efff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contacto-container {
+    max-width: 500px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.contacto-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.contacto-container h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #222222;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.contacto-container p {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #555555;
+    line-height: 1.5;
+}
+
+.contacto-container form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.contacto-container form textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #d1d9e6;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.contacto-container form textarea:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+.contacto-container form textarea {
+    resize: vertical;
+}
+
+.contacto-container form button {
+    width: 100%;
+    padding: 16px;
+    background: #007BFF;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.contacto-container form button:hover {
+    background: #0056b3;
+    transform: translateY(-2px);
+}
+
+.contacto-container form button:active {
+    transform: translateY(1px);
+}

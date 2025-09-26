@@ -1,4 +1,8 @@
 /* Contenedor principal */
+main{
+      background: linear-gradient(120deg, #f5f7fa, #e4efff);
+}
+
 .container {
   display: flex;
   gap: 20px;
