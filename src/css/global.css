@@ -31,7 +31,7 @@ nav {
 }
 .datos-usuario{
     display: flex;
-    margin-right: 200px;
+    margin-right: 50px;
 }
 .datos-usuario img{
     max-width: 50px;
@@ -45,4 +45,16 @@ nav {
     border-radius: 8px;
     border: 1;
     border-style:outset;
+}
+#btn_cerrarsesion{
+    width: 100%;
+    padding: 15px;
+    background: #007BFF;
+    margin-left: 100;
+    border: none;
+    border-radius: 12px;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    cursor: pointer;
 }

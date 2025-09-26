@@ -20,7 +20,19 @@ function existeUsuario(username) {
     return usuarios.find(u => u.username === username);
 }
 
+function cerrarsesion(){
+    sessionStorage.removeItem("usuarioActivo")
+    
+    alert("estas cerrando sesion")
+    
+    window.location.replace("login.html");
+}
 
+const btncerrarsesion = document.getElementById('btn_cerrarsesion');
+
+btncerrarsesion.addEventListener("click", function(e){
+    cerrarsesion();
+})
 
 
 

@@ -7,3 +7,4 @@ if(!usuarioActivo){
     // mostrar contenido de usuario
     document.getElementById("user").innerText = ` ${usuarioActivo}`;
 }
+

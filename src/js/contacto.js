@@ -8,6 +8,7 @@ if(!usuarioActivo){
     document.getElementById("user").innerText = `${usuarioActivo}`;
 }
 
+
 const form = document.getElementById("form-contacto");
 
 //coloca el nombre del usuario asignado
