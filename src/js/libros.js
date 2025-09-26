@@ -15,7 +15,7 @@ function libropornombre(nombre) {
     return libros.find(lib => lib.nombre.toLowerCase() === nombre.toLowerCase());
 }
 
-// Renderizar libros en el HTML
+// Renderiza los libros
 const contenedor = document.getElementById("productos");
 
 libros.forEach((libro, index) => {
@@ -30,4 +30,54 @@ libros.forEach((libro, index) => {
     `;
 
     contenedor.appendChild(article);
+});
+
+const btnascendente = document.getElementById('ascendente');
+
+btnascendente.addEventListener('click', () => {
+    // Ordenar libros por precio ascendente
+    const librosOrdenados = [...libros].sort((a, b) => a.precio - b.precio);
+
+    // Vaciar contenedor
+    contenedor.innerHTML = '';
+
+    // Renderiza los libros reordenados
+    librosOrdenados.forEach((libro, index) => {
+        const article = document.createElement("article");
+        article.id = `articulo_${index + 1}`;
+        article.classList.add("producto");
+
+        article.innerHTML = `
+            <img src="src/img/libros/${libro.imagen}" alt="${libro.nombre}">
+            <h2>${libro.nombre}</h2>
+            <p class="precio">$${libro.precio.toLocaleString("es-CL")}</p>
+        `;
+
+        contenedor.appendChild(article);
+    });
+});
+
+const btndecendente = document.getElementById('decendente');
+
+btndecendente.addEventListener('click', () => {
+    // Ordenar libros por precio decendente
+    const librosOrdenados = [...libros].sort((b, a) => a.precio - b.precio);
+
+    // Vaciar contenedor
+    contenedor.innerHTML = '';
+
+    // Renderiza los libro reordenados
+    librosOrdenados.forEach((libro, index) => {
+        const article = document.createElement("article");
+        article.id = `articulo_${index + 1}`;
+        article.classList.add("producto");
+
+        article.innerHTML = `
+            <img src="src/img/libros/${libro.imagen}" alt="${libro.nombre}">
+            <h2>${libro.nombre}</h2>
+            <p class="precio">$${libro.precio.toLocaleString("es-CL")}</p>
+        `;
+
+        contenedor.appendChild(article);
+    });
 });
