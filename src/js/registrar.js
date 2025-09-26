@@ -12,15 +12,16 @@ const crear = document.getElementById("btn_crear");
             return;
         }
 
-        if(pass !== confirm_pass){
-            document.getElementById("mensaje_crear").innerText = "Las contraseñas no coinciden";
-            return;
-        }
-
         if(existeUsuario(user)){
             document.getElementById("mensaje_crear").innerText = "Usuario ya existente";
             return;
         }
+        
+         if(pass !== confirm_pass){
+            document.getElementById("mensaje_crear").innerText = "Las contraseñas no coinciden";
+            return;
+        }
+
 
         agregarUsuario(user, pass);
         document.getElementById("mensaje_crear").innerText = "Usuario creado correctamente";
