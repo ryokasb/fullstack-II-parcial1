@@ -11,10 +11,6 @@ const libros = [
     { nombre: "El Hobbit", precio: 17500, imagen: "hobbit.jpg" }
 ];
 
-function libropornombre(nombre) {
-    return libros.find(lib => lib.nombre.toLowerCase() === nombre.toLowerCase());
-}
-
 // Renderiza los libros
 const contenedor = document.getElementById("productos");
 

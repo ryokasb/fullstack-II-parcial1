@@ -30,3 +30,8 @@ const crear = document.getElementById("btn_crear");
         document.getElementById('txt_contraseña_crear').value = "";
         document.getElementById('txt_confirmacion_crear').value = "";
     });
+
+//desabilita la rueda en la pagina
+ window.addEventListener("wheel", function(e) {
+    e.preventDefault();
+  }, { passive: false });

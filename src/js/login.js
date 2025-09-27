@@ -20,3 +20,8 @@ const ingresar = document.getElementById("btn_ingresar");
             document.getElementById("txt_contraseña").value = "";
         }
     });
+
+//desabilita la rueda en la pagina
+ window.addEventListener("wheel", function(e) {
+    e.preventDefault();
+  }, { passive: false });

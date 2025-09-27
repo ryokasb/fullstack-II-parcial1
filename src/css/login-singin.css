@@ -1,3 +1,4 @@
+
 .txt-input{
   padding: 10px 15px;          /* espacio interno */
   border: 2px solid #ccc;      /* borde gris claro */
@@ -44,6 +45,11 @@ label {
   font-size: 16px;
   cursor: pointer;
 }
+
+#fondo-id {
+  width: 100%;
+  height: 100%;
+}
 aside {
   width: 250px;       
   background-color: #ddd;
@@ -52,9 +58,5 @@ aside {
 
 body{
   display: flex;
-  max-height: 100%;
-}
-#fondo-id {
-  width: 100%;
-  height: 100%;
+  margin: 0;
 }
