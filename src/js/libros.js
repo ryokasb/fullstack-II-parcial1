@@ -32,41 +32,21 @@ libros.forEach((libro, index) => {
     contenedor.appendChild(article);
 });
 
-const btnascendente = document.getElementById('ascendente');
+const selectOrden = document.getElementById("orden");
 
-btnascendente.addEventListener('click', () => {
-    // Ordenar libros por precio ascendente
-    const librosOrdenados = [...libros].sort((a, b) => a.precio - b.precio);
+selectOrden.addEventListener("change", () => {
+    let librosOrdenados = [...libros];
 
-    // Vaciar contenedor
-    contenedor.innerHTML = '';
-
-    // Renderiza los libros reordenados
-    librosOrdenados.forEach((libro, index) => {
-        const article = document.createElement("article");
-        article.id = `articulo_${index + 1}`;
-        article.classList.add("producto");
-
-        article.innerHTML = `
-            <img src="src/img/libros/${libro.imagen}" alt="${libro.nombre}">
-            <h2>${libro.nombre}</h2>
-            <p class="precio">$${libro.precio.toLocaleString("es-CL")}</p>
-        `;
-
-        contenedor.appendChild(article);
-    });
-});
-
-const btndecendente = document.getElementById('decendente');
-
-btndecendente.addEventListener('click', () => {
-    // Ordenar libros por precio decendente
-    const librosOrdenados = [...libros].sort((b, a) => a.precio - b.precio);
+    if (selectOrden.value === "precio-asc") {
+        librosOrdenados.sort((a, b) => a.precio - b.precio);
+    } else if (selectOrden.value === "precio-desc") {
+        librosOrdenados.sort((a, b) => b.precio - a.precio);
+    }
 
     // Vaciar contenedor
     contenedor.innerHTML = '';
 
-    // Renderiza los libro reordenados
+    // Renderizar libros ordenados
     librosOrdenados.forEach((libro, index) => {
         const article = document.createElement("article");
         article.id = `articulo_${index + 1}`;
